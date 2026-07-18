@@ -39,7 +39,7 @@ public class User {
     private String token;
 
     @Column(name = "token_expired_at")
-    private BigInteger tokenExpiredAt;
+    private Long tokenExpiredAt;
 
     @CreatedDate
     @Column(name = "created_at")

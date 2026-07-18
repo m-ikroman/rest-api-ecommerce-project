@@ -1,5 +1,6 @@
 package rest_api.ecommerce.model;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,9 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserResponse {
+public class LoginRequest {
+    @NotBlank
     private String username;
-    private String name;
-    private String email;
-    private String phone;
+
+    @NotBlank
+    private String password;
 }
